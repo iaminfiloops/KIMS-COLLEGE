@@ -146,7 +146,7 @@ const Footer: React.FC = () => {
               Email: contact@sanakamedical.com
             </Typography>
             <Typography variant="body2" gutterBottom color="#f0f0f0">
-              Phone: 90462 28190
+              Phone: 84204 61369
             </Typography>
             <Typography variant="body2" gutterBottom color="#f0f0f0">
               Address: Malandighi, Kanksha, Durgapur-713212, India
@@ -177,7 +177,7 @@ const Footer: React.FC = () => {
             <SocialIcon
               src={Whatsapp}
               alt="WhatsApp"
-              href="https://wa.me/+918017508002"
+              href="https://wa.me/+918420461369"
             />
             <SocialIcon
               src={Youtube}
