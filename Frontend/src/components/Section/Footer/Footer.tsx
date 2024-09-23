@@ -123,6 +123,23 @@ const Footer: React.FC = () => {
               </Typography>
             </Link>
             <Link
+              to="/privacy-policy"
+              style={{ textDecoration: "none", color: "#f0f0f0" }}
+            >
+              <Typography variant="body2" gutterBottom>
+                {" "}
+                Privacy Policy
+              </Typography>
+            </Link>
+            <Link
+              to="/termsofuse"
+              style={{ textDecoration: "none", color: "#f0f0f0" }}
+            >
+              <Typography variant="body2" gutterBottom>
+                {" "}
+                Terms & Conditions
+              </Typography>
+              <Link
               to="/faq"
               style={{ textDecoration: "none", color: "#f0f0f0" }}
             >
@@ -130,6 +147,7 @@ const Footer: React.FC = () => {
                 {" "}
                 FAQs
               </Typography>
+            </Link>
             </Link>
           </Grid>
 
@@ -143,7 +161,7 @@ const Footer: React.FC = () => {
               Contact
             </Typography>
             <Typography variant="body2" gutterBottom color="#f0f0f0">
-              Email: contact@sanakamedical.com
+              Email: contact@kimscollege.com
             </Typography>
             <Typography variant="body2" gutterBottom color="#f0f0f0">
               Phone: 84204 61369

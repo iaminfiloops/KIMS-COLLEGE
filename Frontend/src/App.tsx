@@ -16,6 +16,9 @@ import Lead from "./components/Leads/Lead";
 import NewsComponent from "./components/Section/News/news";
 import PDFViewer from "./components/Section/pdf/pdf";
 import CarouselComponentkims from "./components/Home/kims";
+import AboutUse from "./components/Section/policy/about";
+import PrivacyPolicy from "./components/Section/policy/privacy";
+import TermsAndConditions from "./components/Section/policy/terms";
 
 const Footer = React.lazy(() => import("./components/Section/Footer/Footer"));
 const Header = React.lazy(() => import("./components/Section/Header/Header"));
@@ -24,15 +27,13 @@ const RegisterPage = React.lazy(
 );
 
 const LoginPage = React.lazy(() => import("./components/Section/Login/Login"));
-2
+2;
 // const Home = React.lazy(() => import("./components/Home/Home"));
 const Main = React.lazy(() => import("./components/Admin/Main"));
 const AdminAcessRequest = React.lazy(
   () => import("./components/Admin/AdminAcessRequest")
 );
-const AboutUs = React.lazy(
-  () => import("./components/Section/AboutUs/AboutUs")
-);
+
 const ContactUs = React.lazy(
   () => import("./components/Section/ContactUs/ContactUS")
 );
@@ -84,12 +85,15 @@ const GeneralRoute: React.FC = () => (
       <Route path="programs" element={<ProgramsPage />} />
       <Route path="gnm" element={<GNMPage />} />
       <Route path="apply-and-enroll" element={<ContactUs />} />
-      <Route path="aboutUs" element={<AboutUs />} />
+      <Route path="aboutUs" element={<AboutUse />} />
       <Route path="faq" element={<FAQPage />} />
       <Route path="/neetupdates" element={<NewsComponent />} />
-      <Route path="/images/kimsProspectus" element={<PDFViewer pdfUrl="/images/KimsProspectus.pdf" />} />
-
-
+      <Route
+        path="/images/kimsProspectus"
+        element={<PDFViewer pdfUrl="/images/KimsProspectus.pdf" />}
+      />
+      <Route path="privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="termsofuse" element={<TermsAndConditions />} />
     </Routes>
     <Footer />
   </React.Fragment>
